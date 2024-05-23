@@ -1,0 +1,284 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1140px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.ph1 {
+  background-image: url("img/header/header-bg.jpg");
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(25, 148, 255);
+  background-image: url("img/header/header-bg.jpg");
+  background-size: cover;
+  background-position: center;
+
+  &-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 130%;
+    text-align: center;
+    color: white;
+    margin: 0;
+    margin-bottom: 25px;
+  }
+
+  &-subtitle {
+    margin: 0;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: white;
+  }
+
+  &-arrow {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+
+#portfolio {
+  padding-top: 80px;
+  padding-bottom: 115px;
+}
+
+.portfolio-header {
+  margin: 0;
+  margin-bottom: 70px;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 130%;
+  text-align: center;
+  color: black;
+}
+
+.card {
+  background-color: white;
+  max-width: 540px;
+  margin-bottom: 30px;
+  box-shadow: 0px 10px 40px rgba(126, 155, 189, 0.35);
+  transition: transform 0.2s ease-in;
+
+  &:hover {
+    transform: translateY(-15px);
+  }
+
+  &-link {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 20px;
+    transition: color 0.2s ease-in;
+
+    &:hover {
+      color: rgb(39, 91, 236);
+    }
+  }
+
+  &-img {
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+  }
+
+  &-title {
+    margin: 0;
+    margin-bottom: 13px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 130%;
+    color: black;
+    margin: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:nth-last-child(2) {
+    margin-bottom: 0;
+  }
+}
+
+.portfolio-cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer {
+  padding-top: 45px;
+  padding-bottom: 130px;
+  background-color: #1E4776;
+  color: #fff;
+
+  &-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &-copyright {
+    min-width: 350px;
+    color: #7e9ec9;
+    line-height: 1.3;
+    flex-grow: 1;
+
+    &-name {
+      font-weight: 700;
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 600;
+      margin: 0;
+      margin-bottom: 15px;
+    }
+  }
+
+  &-col {
+    min-width: 350px;
+    flex-grow: 1;
+  }
+
+  &-icons {
+    p {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 1.3;
+    }
+
+    &-row {
+      display: flex;
+      align-items: center;
+
+      > * + * {
+        margin-left: 30px;
+      }
+    }
+  }
+
+  &-button {
+    display: inline-block;
+    height: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 3px solid #FFFFFF;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 44px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+      background-color: white;
+      color: #1E4776;
+    }
+  }
+
+  &-contacts {
+    p {
+      margin: 15px 0;
+      font-size: 16px;
+      line-height: 1.3;
+      color: #7e9ec9;
+    }
+  }
+}
+
+.project {
+  padding: 80px 0 120px 0;
+  text-align: center;
+
+  &-header {
+    margin: 0;
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 1.3;
+    color: black;
+    margin-bottom: 40px;
+  }
+
+  &-img {
+    margin-bottom: 70px;
+  }
+
+  &-description {
+    max-width: 730px;
+    margin: 0 auto 60px;
+
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  }
+
+  &-btn-back {
+    display: inline-block;
+    height: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 3px solid #275bec;
+    border-radius: 50px;
+    color: #275bec;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 54px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+      background-color: #275bec;
+      color: white;
+    }
+  }
+}
+
+.ins {
+  padding-left: 50px;
+}
